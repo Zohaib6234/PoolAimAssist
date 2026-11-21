@@ -120,7 +120,7 @@ class OverlayService : Service() {
 
             return START_NOT_STICKY
 
-        } } catch (e: Exception) {
+         } catch (e: Exception) {
     Log.e(TAG, "Service startup failed", e)
 
     android.widget.Toast.makeText(

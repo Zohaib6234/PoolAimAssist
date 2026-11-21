@@ -1,0 +1,15 @@
+POOL AIM ASSIST — APK BANANE KA TAREEQA
+
+Is ZIP mein Android Studio project aur GitHub Actions build workflow shamil hai. APK is ZIP ke andar pehle se compiled nahi hai.
+
+1) ZIP ko extract karein.
+2) GitHub.com par sign in karke New repository banayein. Repository ka naam PoolAimAssist rakh sakte hain.
+3) Extract kiye gaye project ke tamam files/folders repository ke root mein upload karein. .github folder bhi upload hona chahiye.
+4) GitHub repository mein Actions tab kholein.
+5) Build Android APK workflow select karein aur Run workflow dabayein.
+6) Build complete hone ke baad workflow run ke neeche Artifacts mein PoolAimAssist-debug-apk download karein.
+7) Downloaded artifact ZIP ko extract karein. app-debug.apk ko Android phone par khol kar install karein. Zarurat par Android Settings mein is source se app install karne ki permission dein.
+
+NOTE: Build ko internet access chahiye. Pehli build mein kuch minutes lag sakte hain. Debug APK testing/personal use ke liye hai; public distribution ke liye signed release APK alag se banana hota hai.
+
+APP LIMITATIONS: Project README ke mutabiq ball detection color/blob algorithm par based hai; table pockets pehli dafa manually calibrate karni hoti hain. Har pool game/table skin par perfect detection ki guarantee nahi. Apne game ke rules/terms bhi check karein.

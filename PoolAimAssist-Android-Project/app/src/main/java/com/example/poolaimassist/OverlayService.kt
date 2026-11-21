@@ -120,11 +120,18 @@ class OverlayService : Service() {
 
             return START_NOT_STICKY
 
-        } catch (e: Exception) {
-            Log.e(TAG, "Service startup failed", e)
-            stopSelf()
-            return START_NOT_STICKY
-        }
+        } } catch (e: Exception) {
+    Log.e(TAG, "Service startup failed", e)
+
+    android.widget.Toast.makeText(
+        applicationContext,
+        "ERROR: ${e.javaClass.simpleName}: ${e.message}",
+        android.widget.Toast.LENGTH_LONG
+    ).show()
+
+    stopSelf()
+    return START_NOT_STICKY
+}
     }
 
     private fun processFrame(bitmap: android.graphics.Bitmap) {
